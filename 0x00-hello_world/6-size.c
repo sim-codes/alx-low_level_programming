@@ -2,23 +2,23 @@
 /**
  * main - Entry point
  *
- * Return: Always 1 (Success)
+ * Return: Always 0 (Success)
  *
  * Author: Segun Michael
  *
  */
 int main(void)
 {
-	int c = sizeof(char);
-	int i = sizeof(int);
-	int li = sizeof(long int);
-	int lli = sizeof(long long int);
-	int f = sizeof(float);
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
 
-	printf("Size of a char: %d byte(s)\n", c);
-	printf("Size of an int: %d byte(s)\n", i);
-	printf("Size of a long int: %d bytes(s)\n", li);
-	printf("Size of a long long int: %d bytes(s)\n", lli);
-	printf("Size of a float: %d byte(s)\n", f);
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
