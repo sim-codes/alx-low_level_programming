@@ -1,15 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- *
- * Return: Always 0 (Success)
- *
  * Author: Segun Michael
  *
  * print_alphabet - This function prints alphabets in lower case
- *
  */
 void print_alphabet(void)
 {
@@ -18,9 +11,4 @@ void print_alphabet(void)
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
 	putchar('\n');
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
