@@ -4,17 +4,18 @@
  * more_numbers - A function that prints numbers from 0 to 9
  * _putchar - prints each character out
  */
-
 void more_numbers(void)
 {
-	char i;
-	char j;
+	int i, j = 0;
 
-	for (i = '0'; i <= '9'; i++)
+	for (; j < 10; j++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar(j);
+			if (i > 9)
+				_putchar(i / 10 + '0');
+
+			_putchar(i % 10 + '0');
 		}
 		_putchar('\n');
 	}
