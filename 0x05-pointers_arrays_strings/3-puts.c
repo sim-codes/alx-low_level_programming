@@ -4,8 +4,11 @@
  * _puts - A function that prints string to stdout
  * @str: Value to be printed
  */
-
-void _puts(char *str)
+int main(void)
 {
-	puts(str);
+  char *str;
+
+  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+  _puts(str);
+  return (0);
 }
