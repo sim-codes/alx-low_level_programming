@@ -23,4 +23,5 @@ void rev_string(char *s)
 		s--;
 		*s = n[c];
 		c++;
+	}
 }
