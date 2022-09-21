@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * string_toupper - A function that convert a char to upper case
  * @str: Array of characters
  *
