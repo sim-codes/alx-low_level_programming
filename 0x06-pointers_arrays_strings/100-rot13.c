@@ -10,18 +10,21 @@ char *rot13(char *rot)
 {
 	int i;
 
-	for (i = 0; rot[i] != '\0'; i++)
+	int i = 0;
+
+	while (s[i] != '\0')
 	{
-		while ((rot[i] >= 97 && rot[i] <= 122) ||
-				(rot[i] >= 65 && rot[i] <= 90))
+		while ((s[i] >= 'a' && s[i] <= 'z') ||
+				(s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			if (rot[i] >= 65 && rot[i] <= 77 || rot[i] >= 97 && rot[i] <= 109)
-				rot[i] += 13;
+			if ((s[i] >= 'a' && s[i] <= 'm') ||
+					(s[i] >= 'A' && s[i] <= 'M'))
+				s[i] += 13;
 			else
-				rot[i] -= 13;
+				s[i] -= 13;
 			i++;
 		}
+		i++;
 	}
-
 	return (rot);
 }
