@@ -12,13 +12,14 @@ char *rot13(char *rot)
 
 	for (i = 0; rot[i] != '\0'; i++)
 	{
-		for (; (rot[i] >= 97 && rot[i] <= 122) ||
-				(rot[i] >= 65 && rot[i] <= 90); i++)
+		while ((rot[i] >= 97 && rot[i] <= 122) ||
+				(rot[i] >= 65 && rot[i] <= 90))
 		{
 			if (rot[i] >= 65 && rot[i] <= 77 || rot[i] >= 97 && rot[i] <= 109)
 				rot[i] += 13;
 			else
 				rot[i] -= 13;
+			i++;
 		}
 	}
 
